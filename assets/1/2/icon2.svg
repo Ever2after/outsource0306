@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fb0;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        fill: #fafafa;
+      }
+    </style>
+  </defs>
+  <g id="그룹_16297" data-name="그룹 16297" transform="translate(229 -2743.596)">
+    <circle id="타원_457" data-name="타원 457" class="cls-1" cx="28" cy="28" r="28" transform="translate(-229 2743.596)"/>
+    <g id="videocam-24px" transform="translate(-213 2759.595)">
+      <path id="패스_57520" data-name="패스 57520" class="cls-2" d="M0,0H24V24H0Z"/>
+      <path id="패스_57521" data-name="패스 57521" class="cls-3" d="M17.1,10.407V6.979A1,1,0,0,0,16.09,6H4.007A1,1,0,0,0,3,6.979v9.793a1,1,0,0,0,1.007.979H16.09a1,1,0,0,0,1.007-.979V13.345l4.028,3.917V6.49Z" transform="translate(-0.062 0.126)"/>
+    </g>
+  </g>
+</svg>

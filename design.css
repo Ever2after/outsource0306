@@ -1,0 +1,117 @@
+body{
+  margin : 0;
+  padding : 0;
+}
+
+a{
+  text-decoration: none;
+  color : black;
+}
+
+h1, h2, h3, h4, p{
+  margin : 0;
+}
+
+h1{font-size : 68px;}
+h2{font-size : 45px;}
+h3{font-size : 30px;}
+h4{font-size : 24px;}
+p{font-size : 18px;}
+
+a{
+  transition : .2s;
+}
+
+.button1{
+  box-sizing: border-box;
+  height : 48px;
+  width : 140px;
+  border : 2px solid black;
+  border-radius: 8px;
+  color : black;
+  text-align : center;
+  display : flex;
+  align-items: center;
+}
+
+.button1 > p{
+  width : 140px;
+  text-align : center;
+  font-weight: bold;
+}
+
+.button1:hover{
+  background-color : black;
+  color : rgb(255, 187, 0);
+}
+
+/*---------header---------*/
+header{
+  width : 100%;
+  position : sticky;
+  top : 0;
+  z-index : 100;
+  background-color : rgb(255, 187, 0);
+  margin : 0;
+}
+
+header > div{
+  width : 1160px;
+  height : 90px;
+  box-sizing: border-box;
+  margin : 0 auto;
+  padding : 16px 0;
+  display : flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header > div > div{
+  display : flex;
+  align-items: center;
+}
+
+header p{
+  font-weight: bold;
+}
+
+header > div > div:nth-child(1) > a{
+  display : inline-block;
+  margin-right : 50px;
+}
+
+header > div > div:nth-child(2) > a{
+  margin-left : 20px;
+}
+
+
+/*------------sec1----------*/
+.sec1{
+  width : 100%;
+  background-color : rgb(255, 187, 0);
+  background-image: url('./assets/0/main_gif.gif');
+  background-repeat: no-repeat;
+  background-size: 1800px;
+  background-position : -280px 0;
+}
+
+.sec1 > div{
+  width : 1160px;
+  margin : 0 auto;
+  padding-bottom : 300px;
+}
+
+.sec1 h1{
+  display : inline-block;
+  margin : 76px 0 22px 0;
+  letter-spacing : -3px;
+}
+
+.sec1 > div > p{
+  color : #fff;
+}
+
+.sec1 a{
+  margin-top : 36px;
+}
