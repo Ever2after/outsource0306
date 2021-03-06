@@ -190,6 +190,7 @@ header > div > div:nth-child(2) > a{
 
 .sec2 > p{
   margin-bottom : 34px;
+  color : #777777;
 }
 
 /*-----------sec3-----------*/
@@ -267,6 +268,7 @@ header > div > div:nth-child(2) > a{
 
 .sec4 > p{
   margin-bottom : 94px;
+  color : #777777;
 }
 
 .sec4 .imgcontainer{
@@ -376,6 +378,7 @@ header > div > div:nth-child(2) > a{
 .sec5 .card .detail > p{
   padding-bottom : 20px;
   font-size : 16px;
+  color : #777777;
 }
 
 .sec5 .card a{
