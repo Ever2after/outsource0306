@@ -1,3 +1,11 @@
+function onClick1(){
+  var target = document.getElementsByClassName('slidernav')[0];
+  if(target.style.display==='block') target.style.display = "none";
+  else target.style.display = "block";
+}
+
+// onscroll functions
+
 window.onscroll = function() {myFunction()};
 
 function myFunction() {
@@ -17,8 +25,6 @@ function appear1(end, aniend, anistart, start){
   var target2 = document.getElementById('over1');
   var scrolltop = target1.getBoundingClientRect().top;
   var scrollbottom = target1.getBoundingClientRect().bottom;
-  //console.log(scrolltop);
-  //console.log(scrollbottom);
   if ( scrolltop < anistart &&  scrollbottom > aniend ) {
     target1.classList.add("fadeLeftTop");
     target1.style.visibility="visible";

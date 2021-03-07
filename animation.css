@@ -238,5 +238,21 @@
     animation-name: fadeRight2;
     animation-duration: .5s;
   }
+}
 
+.slideRight {
+  animation-name: slideRight;
+  animation-duration: .2s;
+  visibility: visible;
+}
+
+@keyframes slideRight {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(-260px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+  }
 }
