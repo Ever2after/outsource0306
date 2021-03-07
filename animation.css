@@ -28,6 +28,17 @@
   }
 }
 
+@-webkit-keyframes fadeLeftTop2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(30px) translateX(30px) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%)  translateX(0%) scale(0.5);
+  }
+}
+
 .fadeRightBottom{
   animation : fadeRightBottom;
   animation-duration : .3s;
@@ -55,6 +66,17 @@
   100% {
     opacity: 1;
     -webkit-transform: translateY(0%)  translateX(0%);
+  }
+}
+
+@-webkit-keyframes fadeRightBottom2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px) translateX(-30px) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%)  translateX(0%) scale(0.5);
   }
 }
 
@@ -87,6 +109,18 @@
   }
 }
 
+@-webkit-keyframes fadeCenter2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px) translateX(0%) scale(0.4);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%)  translateX(0%) scale(0.4);
+  }
+}
+
+
 .fadeLeft {
   -webkit-animation-name: fadeLeft;
   -webkit-animation-duration: .5s;
@@ -113,6 +147,17 @@
   100% {
     opacity: 1;
     -webkit-transform: translateY(0%)  translateX(0%);
+  }
+}
+
+@-webkit-keyframes fadeLeft2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(0%) translateX(60px) scale(0.35);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%)  translateX(0%) scale(0.35);
   }
 }
 
@@ -143,4 +188,55 @@
     opacity: 1;
     -webkit-transform: translateY(0%)  translateX(0%);
   }
+}
+
+@-webkit-keyframes fadeRight2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(0%) translateX(-30px) scale(0.35);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%)  translateX(0%) scale(0.35);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fadeLeftTop{
+    animation : fadeLeftTop2;
+    animation-duration : .3s;
+    -webkit-animation : fadeLeftTop2;
+    -webkit-animation-duration : .3s;
+    visibility : visible;
+  }
+
+  .fadeRightBottom{
+    animation : fadeRightBottom2;
+    animation-duration : .3s;
+    -webkit-animation : fadeRightBottom2;
+    -webkit-animation-duration : .3s;
+    visibility : visible;
+  }
+
+  .fadeCenter {
+    -webkit-animation-name: fadeCenter2;
+    -webkit-animation-duration: .5s;
+    animation-name: fadeCenter2;
+    animation-duration: .5s;
+  }
+
+  .fadeLeft {
+    -webkit-animation-name: fadeLeft2;
+    -webkit-animation-duration: .5s;
+    animation-name: fadeLeft2;
+    animation-duration: .5s;
+  }
+
+  .fadeRight {
+    -webkit-animation-name: fadeRight2;
+    -webkit-animation-duration: .5s;
+    animation-name: fadeRight2;
+    animation-duration: .5s;
+  }
+
 }
