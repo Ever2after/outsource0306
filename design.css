@@ -12,6 +12,10 @@ h1, h2, h3, h4, p{
   margin : 0;
 }
 
+.mobile{
+  display : none !important;
+}
+
 @font-face {
   font-family: 'S-CoreDream EB';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-7ExtraBold.woff') format('woff');
@@ -76,7 +80,7 @@ header button{
 
 header > div{
   width : 1160px;
-  height : 90px;
+  height : 72px;
   box-sizing: border-box;
   margin : 0 auto;
   padding : 16px 0;
@@ -93,18 +97,19 @@ header > div > div{
 
 header p{
   font-weight: bold;
-}
-
-header > div > div:nth-child(1) > a{
-  display : inline-block;
-  margin-right : 50px;
+  font-family : 'Montserrat', sans-serif;
 }
 
 header > div > div:nth-child(2) > a{
-  margin-left : 20px;
+  display : inline-block;
+  margin-right : 60px;
 }
 
-.slidernav{
+header > div > div:nth-child(3) > a{
+  margin-left : 60px;
+}
+
+#slidernav{
   display : none;
 }
 
@@ -193,11 +198,11 @@ header > div > div:nth-child(2) > a{
 }
 
 .sec2 > h3{
-  margin : 20px 0 20px 0;
+  margin : 20px 0 16px 0;
 }
 
 .sec2 > p{
-  margin-bottom : 34px;
+  margin-bottom : 140px;
   color : #777777;
 }
 
@@ -212,12 +217,12 @@ header > div > div:nth-child(2) > a{
 
 .sec3 > div:nth-child(1) > img{
   position : absolute;
-  margin-left : -380px;
-  margin-top : 68px;
+  margin-left : -400px;
+  margin-top : 12px;
 }
 
 .sec3 > div:nth-child(1){
-  height : 545px;
+  height : 494px;
 }
 
 .sec3 .iconline{
@@ -228,12 +233,12 @@ header > div > div:nth-child(2) > a{
 }
 
 .sec3 > h3{
-  margin : 20px 0 20px 0;
+  margin : 20px 0 16px 0;
   color : #fff;
 }
 
 .sec3 > p{
-  padding-bottom : 34px;
+  padding-bottom : 60px;
   color : #fff;
 }
 
@@ -249,13 +254,13 @@ header > div > div:nth-child(2) > a{
 .sec4 > div:nth-child(1){
   width : 1160px;
   margin : 0 auto;
-  height : 644px;
+  height : 623px;
 }
 
 .sec4 > div:nth-child(1) > img{
   position : absolute;
-  margin-left : -327px;
-  margin-top : 30px;
+  margin-left : -280px;
+  margin-top : 115px;
 }
 
 .sec4 .iconline:nth-child(2){
@@ -271,11 +276,11 @@ header > div > div:nth-child(2) > a{
 }
 
 .sec4 > h3{
-  margin : 20px 0 24px 0;
+  margin : 20px 0 16px 0;
 }
 
 .sec4 > p{
-  margin-bottom : 94px;
+  margin-bottom : 200px;
   color : #777777;
 }
 
@@ -305,11 +310,6 @@ header > div > div:nth-child(2) > a{
   width : 0;
   border-right : 1px solid rgb(255, 187, 0);
 }
-
-.sec4 .p_2{
-  margin-bottom : 60px;
-}
-
 /*---------sec5--------*/
 .sec5{
   width : 100%;
@@ -496,12 +496,8 @@ footer > div:nth-child(2){
   justify-content: space-between;
 }
 
-footer > div:nth-child(2) > div{
-
-}
-
 footer > div:nth-child(2) > p{
-  font-size : 18px;
+  font-size : 12px;
   color : #aaaaaa;
 }
 
@@ -516,6 +512,9 @@ footer > div:nth-child(2) a > p{
 }
 
 @media screen and (max-width: 768px) {
+  .mobile{display : inline-block !important;}
+  .pc{display : none !important;}
+
   h1{font-size : 40px;font-family: 'Noto Sans KR', sans-serif;}
   h2{font-size : 30px;font-family : 'S-CoreDream LT', 'S-CoreDream EB'}
   h2 > span{font-family : 'S-CoreDream EB'}
@@ -563,15 +562,22 @@ footer > div:nth-child(2) a > p{
     border : none;
     outline : none;
     position : absolute;
+  }
+
+  header .slidebtn{
     left : 20px;
+  }
+
+  header .dropdownbtn{
+    right : 20px;
   }
 
   header > div{
     width : 100%;
-    height : 70px;
+    height : 72px;
     box-sizing: border-box;
     margin : 0 auto;
-    padding : 16px 10px;
+    padding : 10px 10px;
     display : flex;
     flex-direction: row;
     align-items: center;
@@ -589,20 +595,12 @@ footer > div:nth-child(2) a > p{
     font-weight: bold;
   }
 
-  header > div > div:nth-child(2) > a:not(.homelogo){
-    display : none;
-  }
-
   header > div > div:nth-child(2) > a{
     margin-right : 0;
     margin-left : 0;
   }
 
-  header > div > div:nth-child(3){
-    display : none;
-  }
-
-  .slidernav{
+  #slidernav{
     display : block;
     position : fixed;
     top : 70px;
@@ -614,27 +612,51 @@ footer > div:nth-child(2) a > p{
     padding : 30px;
   }
 
-  .slidernav p{
+  #slidernav p{
     font-size : 16px;
     font-weight: bold;
   }
 
-  .slidernav > div:nth-child(1){
+  #slidernav > div:nth-child(1){
     display : flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
   }
 
-  .slidernav > div:nth-child(2){
+  #slidernav > div:nth-child(2){
     display : flex;
     flex-direction: column;
     justify-content: flex-start;
     margin-top : 30px;
   }
 
-  .slidernav > div:nth-child(2) a{
+  #slidernav > div:nth-child(2) a{
     margin-bottom : 20px;
+  }
+
+  #dropdownnav{
+    position : fixed;
+    width : 150px;
+    box-sizing: border-box;
+    padding : 20px;
+    right : 20px;
+    top : 50px;
+    z-index : 200;
+    background : rgb(255, 187, 0);
+    box-shadow : 0 5px 10px rgba(0,0,0,0.3);
+    border : 0 solid #333333;
+    border-radius: 7px;
+  }
+
+  #dropdownnav p{
+    font-size : 16px;
+    font-weight: bold;
+  }
+
+  #dropdownnav a{
+    display : block;
+    margin : 10px 0;
   }
 
 
@@ -676,6 +698,7 @@ footer > div:nth-child(2) a > p{
     width : 100%;
     background-image : url('./assets/1/back_logo_img1.png');
     background-repeat : no-repeat;
+    background-size : contain;
     background-position : bottom left;
     text-align : center;
   }
@@ -726,7 +749,7 @@ footer > div:nth-child(2) a > p{
   }
 
   .sec2 > h3{
-    margin : 20px 0 20px 0;
+    margin : 20px 0 12px 0;
   }
 
   .sec2 > p{
@@ -746,12 +769,12 @@ footer > div:nth-child(2) a > p{
   .sec3 > div:nth-child(1) > img{
     transform : scale(0.4);
     position : absolute;
-    margin-left : -370px;
-    margin-top : -50px;
+    margin-left : -380px;
+    margin-top : -110px;
   }
 
   .sec3 > div:nth-child(1){
-    height : 285px;
+    height : 246px;
   }
 
   .sec3 .iconline{
@@ -762,7 +785,7 @@ footer > div:nth-child(2) a > p{
   }
 
   .sec3 > h3{
-    margin : 20px 0 20px 0;
+    margin : 20px 0 12px 0;
     color : #fff;
   }
 
@@ -777,6 +800,7 @@ footer > div:nth-child(2) a > p{
     text-align : center;
     background-image : url('./assets/1/back_logo_img2.png');
     background-repeat : no-repeat;
+    background-size: contain;
     background-position : center right;
   }
 
@@ -788,8 +812,8 @@ footer > div:nth-child(2) a > p{
 
   .sec4 > div:nth-child(1) > img{
     position : absolute;
-    margin-left : -327px;
-    margin-top : -130px;
+    margin-left : -275px;
+    margin-top : -66px;
     transform : scale(0.4);
   }
 
@@ -806,7 +830,7 @@ footer > div:nth-child(2) a > p{
   }
 
   .sec4 > h3{
-    margin : 20px 0 24px 0;
+    margin : 20px 0 12px 0;
   }
 
   .sec4 > p{
@@ -911,7 +935,7 @@ footer > div:nth-child(2) a > p{
   }
 
   .sec5 .card .type{
-    font-size : 18px;
+    font-size : 28px;
     margin-bottom : 12px;
     color : #FFBB00;
   }
@@ -962,11 +986,11 @@ footer > div:nth-child(2) a > p{
   .sec6{
     width : 100%;
     text-align : center;
-    background-image : url('./assets/3/back_img.png');
+    background-image : url('./assets/3/mobile_back.png');
     background-repeat : no-repeat;
     background-position : center;
     background-size : cover;
-    padding-bottom : 85px;
+    padding-bottom : 105px;
   }
 
   .sec6 h4{
@@ -975,12 +999,12 @@ footer > div:nth-child(2) a > p{
     color : #fff;
     border-radius: 8px;
     padding : 2px 12px;
-    margin : 100px 0 20px 0;
+    margin : 120px 0 20px 0;
   }
 
   .sec6 h2{
     width : 240px;
-    margin : 0 auto 40px auto;
+    margin : 0 auto 20px auto;
   }
 
   .sec6 > p{
@@ -995,71 +1019,48 @@ footer > div:nth-child(2) a > p{
 
   /*-----------footer----------*/
   footer{
+    width : 100%;
+    box-sizing: border-box;
     background-color : black;
     color : #fff;
-    padding : 0 10px;
-    text-align : center;
+    padding : 30px 30px 10px 30px;
+    margin : 0;
+    text-align : left;
   }
 
-  footer > div:nth-child(1){
-    width : 100%;
-    margin : 0 auto;
-    padding-top : 27px;
-    display : flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    height : auto;
+  footer p, footer h4{
+    color : #fff !important;
+    padding-bottom : 10px;
+  }
+
+  footer h4{
+    line-height : 20px;
+    margin : 0;
   }
 
   footer img{
     height : 34px;
     width : 112px;
-    margin : 10px auto;
+    margin : 10px 0 20px 0;
   }
 
-  footer > div:nth-child(1) > div{
+  footer > div:nth-child(2){margin : 0}
+
+  footer > div{
+    width : 100% !important;
     display : flex;
-    flex-direction: column;
-    margin : 0;
-  }
-
-  footer > div:nth-child(1) p{
-    display : inline-block;
-    margin-bottom : 5px;
-    font-size : 12px;
-  }
-
-  footer > div:nth-child(1) > div:nth-child(5) > p{
-    font-size : 14px;
-  }
-
-  footer h4{
-    color : rgb(255, 187, 0);
-    line-height : 20px;
-    margin-bottom : 5px;
-  }
-
-  footer > div:nth-child(2){
-    width : 100%;
-    margin : 10px auto 0 auto;
+    flex-direction: column !important;
     padding-bottom : 20px;
+  }
+
+  footer > div:nth-child(4) > div{
     display : flex;
     flex-direction: row;
   }
 
-  footer > div:nth-child(2) > p{
-    font-size : 12px;
-    color : #aaaaaa;
+  footer > div:nth-child(4) a{
+    margin-right : 10px;
   }
 
-  footer > div:nth-child(2) a{
-    color : #fff;
-    display : inline-block;
-    margin-left : 14px;
-  }
 
-  footer > div:nth-child(2) a > p{
-    font-size : 12px;
-  }
 }

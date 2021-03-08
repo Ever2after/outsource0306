@@ -14,30 +14,43 @@
   <body>
     <header>
       <div>
-        <button onClick="onClick1()"><i class="fas fa-bars fa-2x"></i></button>
+        <button class="mobile slidebtn" onClick="onClick1()"><i class="fas fa-bars fa-2x"></i></button>
         <div class="">
-          <a class="homelogo" href="#"><img src="./assets/header_logo.png" alt=""></a>
-          <a href="#inovation_service"><p>Service</p></a>
-          <a href="#reasonable_price"><p>Price</p></a>
-          <a href="#"><p>Support</p></a>
+          <a class="homelogo" href="#"><img src="./assets/logo_black.svg" alt=""></a>
+          <a class="pc" href="#inovation_service"><p>Service</p></a>
+          <a class="pc" href="#reasonable_price"><p>Price</p></a>
+          <a class="pc" href="#"><p>Support</p></a>
         </div>
-        <div class="">
+        <div class="pc">
           <a href="#"><p>Log-in</p></a>
           <a class="button1" href="#"><p>서비스 신청</p></a>
         </div>
+        <button class="mobile dropdownbtn" onClick="onClick2()"><i class="fas fa-ellipsis-h fa-2x"></i></button>
       </div>
     </header>
 
-    <section class="slidernav slideRight" style="display : none">
+    <!-------slider nav--------->
+
+    <section id="slidernav" class="slideRight" style="display : none">
       <div class="">
-        <a href="#"><p>Log-in</p></a>
-        <a class="button1" href="#"><p>서비스 신청</p></a>
+        <a onClick="onClick1()" href="#"><p>Log-in</p></a>
+        <a onClick="onClick1()" class="button1" href="#"><p>서비스 신청</p></a>
       </div>
       <div class="">
-        <a href="#inovation_service"><p>Service</p></a>
-        <a href="#reasonable_price"><p>Price</p></a>
-        <a href="#"><p>Support</p></a>
+        <a onClick="onClick1()" href="#inovation_service"><p>Service</p></a>
+        <a onClick="onClick1()" href="#reasonable_price"><p>Price</p></a>
+        <a onClick="onClick1()" href="#"><p>Support</p></a>
       </div>
+    </section>
+
+    <!-------dropdown nav--------->
+
+    <section id="dropdownnav" class="slideDown" style="display : none">
+      <a onClick="onClick2()" href="#"><p>Log-in</p></a>
+      <a onClick="onClick2()" href="#"><p>서비스 신청</p></a>
+      <a onClick="onClick2()" href="#inovation_service"><p>Service</p></a>
+      <a onClick="onClick2()" href="#reasonable_price"><p>Price</p></a>
+      <a onClick="onClick2()" href="#"><p>Support</p></a>
     </section>
 
     <section class="sec1">
@@ -51,11 +64,17 @@
 
     <section id="inovation_service" class="sec2">
       <h4>INOVATION SERVICE</h4>
-      <h2>복잡하고 어려운 물류, <span>이제 다다로 쉽게 하세요</span></h2>
+      <h2>복잡하고 어려운 물류, <br class="mobile"/><span>이제 다다로 쉽게 하세요</span></h2>
       <div class="imgcontainer">
         <img id="under1" class="under" src="./assets/1/1/shadow1.png" alt="">
         <img id="over1" class="over" src="./assets/1/1/shadow2.png" alt="">
       </div>
+
+      <img class="float" id="float1" src="./assets/icon_check.png"/>
+      <img class="float" id="float2" src="./assets/icon_check.png"/>
+      <img class="float" id="float3" src="./assets/icon_check.png"/>
+      <img class="float" src="./assets/icon_check.png"/>
+
       <div class="iconline"></div>
       <img src="./assets/1/1/icon1.svg" alt="">
       <h3>고객사와 물류 회사의 원활한 소통</h3>
@@ -64,7 +83,7 @@
 
     <section class="sec3">
       <div>
-        <img id="fade1" src="./assets/1/2/noshadow.png" alt="">
+        <img id="fade1" src="./assets/1/2/shadow.png" alt="">
       </div>
       <div class="iconline"></div>
       <img src="./assets/1/2/icon2.svg" alt="">
@@ -89,13 +108,13 @@
       <div class="iconline"></div>
       <img class="icon" src="./assets/1/4/icon4.png" alt="">
       <h3>오배송을 줄이는 바코드 검수</h3>
-      <p class="p_2">상품 포장 전 상품을 바코드로 검수하여 오배송을 줄입니다.</p>
+      <p>상품 포장 전 상품을 바코드로 검수하여 오배송을 줄입니다.</p>
     </section>
 
     <section id="reasonable_price" class="sec5">
       <div class="top">
         <h4>REASONABLE PRICE</h4>
-        <h2><span>합리적인 가격</span>으로 솔루션을 이용하세요</h2>
+        <h2><span>합리적인 가격</span>으로 <br class="mobile"/>솔루션을 이용하세요</h2>
       </div>
       <div class="imgcontainer">
         <img src="./assets/2/deco_img1.png" alt="">
@@ -148,15 +167,15 @@
 
     <section class="sec6">
       <h4>START WITH US</h4>
-      <h2>지금, <span>다다</span>와 함께 시작해보세요</h2>
+      <h2>지금, <span>다다</span>와 함께 <br class="mobile"/>시작해보세요</h2>
       <p>다다 솔루션을 사용하여 물류가 쉬워지는 경험과 함께<br/>
       당신의 비즈니스를 최고로 성장시키세요.</p>
       <a class="button1" href="#"><p>서비스 신청</p></a>
     </section>
 
-    <footer>
+    <footer class="pc">
       <div>
-        <img src="./assets/footer_logo.png" alt="">
+        <img src="./assets/logo_white.svg" alt="">
         <div class="">
           <p>(주)dada</p>
           <p>대표 : 하성용</p>
@@ -178,11 +197,34 @@
         </div>
       </div>
       <div>
-        <p>Copyright(c) (주)DADA all right reserved.</p>
+        <p>Copyright(c) (주)dada all right reserved.</p>
         <div class="">
           <a href="#"><p>이용약관</p></a>
           <a href="#"><p>개인정보처리방침</p></a>
         </div>
+      </div>
+    </footer>
+
+    <footer class="mobile">
+      <img src="./assets/logo_white.svg" alt="">
+      <div class="">
+        <p>(주)dada &nbsp;| &nbsp;대표 : 하성용</p>
+        <p>사업자번호 : 619-81-07320</p>
+        <p>주소 : 경기도 고양시 덕양구 호원길 3-2 1F</p>
+        <p>통신판매업신고 : 제 2019-고양덕양구-0811호</p>
+        <p>예금주 : (주)100물류 &nbsp;| &nbsp;IBK기업은행 : 222-089794-04-014</p>
+      </div>
+      <div class="">
+      <p>개인정보담당 : 하성용</p>
+        <h4>02-3144-3807</h4>
+        <p>평일 10:00 ~ 18:00 / 주말공휴일 휴무 &nbsp;점심 11:30 ~ 13:00</p>
+      </div>
+      <div class="">
+        <div class="">
+          <a href="#"><p>이용약관</p></a>
+          <a href="#"><p>개인정보처리방침</p></a>
+        </div>
+        <p>Copyright(c) (주)dada all right reserved.</p>
       </div>
     </footer>
   </body>
