@@ -882,7 +882,7 @@ footer > div:nth-child(2) a > p{
 
   .sec5 .top{
     box-sizing: border-box;
-    padding : 0 50px;
+    padding : 0;
   }
 
   .sec5 .top h4{
@@ -1003,7 +1003,6 @@ footer > div:nth-child(2) a > p{
   }
 
   .sec6 h2{
-    width : 240px;
     margin : 0 auto 20px auto;
   }
 
