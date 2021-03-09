@@ -116,6 +116,9 @@ header > div > div:nth-child(3) > a{
 header .button1 {
   width : 120px;
   height : 40px;
+}
+
+header .button1 p{
   font-size : 16px;
 }
 
@@ -525,7 +528,7 @@ footer > div:nth-child(2) a > p{
   .mobile{display : inline-block !important;}
   .pc{display : none !important;}
 
-  h1{font-size : 40px;font-family: 'Noto Sans KR', sans-serif;}
+  h1{font-size : 36px;font-family: 'Noto Sans KR', sans-serif;}
   h2{font-size : 30px;font-family : 'S-CoreDream LT', 'S-CoreDream EB'}
   h2 > span{font-family : 'S-CoreDream EB'}
   h3{font-size : 24px;font-family: 'Noto Sans KR', sans-serif;}
@@ -545,8 +548,7 @@ footer > div:nth-child(2) a > p{
   }
 
   .button1 > p{
-    width : 120px;
-    font-size : 14px;
+    font-size : 12px;
     text-align : center;
     font-weight: bold;
   }
@@ -639,34 +641,31 @@ footer > div:nth-child(2) a > p{
     background-color : rgb(255, 187, 0);
     background-image: url('./assets/0/main_gif.gif');
     background-repeat: no-repeat;
-    background-size: 130%;
-    background-position : bottom right;
+    background-size: 160%;
+    background-position : -240px 200px;
   }
 
   .sec1 > div{
     box-sizing: border-box;
     width : 100%;
     margin : 0 auto;
-    padding : 0 10px 150px 10px;
+    padding : 0 10px 150px 24px;
   }
 
   .sec1 h1{
     display : inline-block;
-    margin : 76px 0 22px 0;
+    margin : 36px 0 20px 0;
     letter-spacing : -3px;
   }
 
   .sec1 > div > p{
-    font-size : 14px;
+    font-size : 12px;
     color : #fff;
-    width : 240px;
-  }
-
-  .sec1 a{
-    margin-top : 36px;
+    line-height : 20px;
   }
 
   .sec1 .button1{
+    margin-top : 52px;
     width : 100px;
     height : 36px;
   }
@@ -942,7 +941,7 @@ footer > div:nth-child(2) a > p{
   }
 
   .sec5 .card a{
-    margin : 22px auto 0 auto;
+    margin : 13px auto 32px auto;
     border : 2px solid #FFBB00;
     color : #FFBB00;
     height : 40px;
