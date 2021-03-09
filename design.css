@@ -105,8 +105,18 @@ header > div > div:nth-child(2) > a{
   margin-right : 60px;
 }
 
+header .homelogo > img{
+  height : 29px;
+}
+
 header > div > div:nth-child(3) > a{
   margin-left : 60px;
+}
+
+header .button1 {
+  width : 120px;
+  height : 40px;
+  font-size : 16px;
 }
 
 #slidernav{
@@ -137,7 +147,7 @@ header > div > div:nth-child(3) > a{
 }
 
 .sec1 > div > p{
-  font-size : 16px;
+  font-size : 18px;
   color : #fff;
 }
 
@@ -439,7 +449,7 @@ header > div > div:nth-child(3) > a{
 .sec6 > p{
   margin-bottom : 32px;
   color : #fff;
-  font-size : 16px;
+  font-size : 18px;
 }
 
 .sec6 a{
@@ -606,7 +616,7 @@ footer > div:nth-child(2) a > p{
     top : 70px;
     z-index : 100;
     background : rgba(255, 187, 0, 0.95);
-    width : 300px;
+    width : 240px;
     height : 100%;
     box-sizing: border-box;
     padding : 30px;
@@ -615,50 +625,13 @@ footer > div:nth-child(2) a > p{
   #slidernav p{
     font-size : 16px;
     font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
   }
 
-  #slidernav > div:nth-child(1){
+  #slidernav a{
     display : flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  #slidernav > div:nth-child(2){
-    display : flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-top : 30px;
-  }
-
-  #slidernav > div:nth-child(2) a{
     margin-bottom : 20px;
   }
-
-  #dropdownnav{
-    position : fixed;
-    width : 150px;
-    box-sizing: border-box;
-    padding : 20px;
-    right : 20px;
-    top : 50px;
-    z-index : 200;
-    background : rgb(255, 187, 0);
-    box-shadow : 0 5px 10px rgba(0,0,0,0.3);
-    border : 0 solid #333333;
-    border-radius: 7px;
-  }
-
-  #dropdownnav p{
-    font-size : 16px;
-    font-weight: bold;
-  }
-
-  #dropdownnav a{
-    display : block;
-    margin : 10px 0;
-  }
-
 
   /*------------sec1----------*/
   .sec1{
@@ -691,6 +664,11 @@ footer > div:nth-child(2) a > p{
 
   .sec1 a{
     margin-top : 36px;
+  }
+
+  .sec1 .button1{
+    width : 100px;
+    height : 36px;
   }
 
   /*------------sec2--------------*/
@@ -739,9 +717,14 @@ footer > div:nth-child(2) a > p{
 
   .sec2 .iconline{
     margin : 0 auto;
-    height : 80px;
+    height : 40px;
     width : 0;
     border-right : 1px solid rgb(255, 187, 0);
+  }
+
+  .icon{
+    width : 40px !important;
+    height : 40px !important;
   }
 
   .sec2 > img{
@@ -779,7 +762,7 @@ footer > div:nth-child(2) a > p{
 
   .sec3 .iconline{
     margin : 0 auto;
-    height : 80px;
+    height : 40px;
     width : 0;
     border-right : 1px solid rgb(255, 187, 0);
   }
@@ -807,19 +790,19 @@ footer > div:nth-child(2) a > p{
   .sec4 > div:nth-child(1){
     width : 100%;
     margin : 0 auto;
-    height : 300px;
+    height : 248px;
   }
 
   .sec4 > div:nth-child(1) > img{
     position : absolute;
     margin-left : -275px;
-    margin-top : -66px;
+    margin-top : -120px;
     transform : scale(0.4);
   }
 
   .sec4 .iconline:nth-child(2){
     margin : 0 auto;
-    height : 80px;
+    height : 40px;
     width : 0;
     border-right : 1px solid rgb(255, 187, 0);
   }
@@ -862,7 +845,7 @@ footer > div:nth-child(2) a > p{
 
   .sec4  .iconline{
     margin : 0 auto;
-    height : 160px;
+    height : 80px;
     width : 0;
     border-right : 1px solid rgb(255, 187, 0);
   }

@@ -36,7 +36,7 @@ function appear1(end, aniend, anistart, start){
 
   var scrolltop = target1.getBoundingClientRect().top;
   var scrollbottom = target1.getBoundingClientRect().bottom;
-  if ( scrolltop < anistart &&  scrollbottom > aniend ) {
+  if ( scrolltop < anistart ) {
     target1.classList.add("fadeLeftTop");
     target1.style.visibility="visible";
     target1.style.opacity = 1;
@@ -100,7 +100,7 @@ function appear2(end, aniend, anistart, start){
   var scrollbottom = target1.getBoundingClientRect().bottom;
   //console.log(scrolltop);
   //console.log(scrollbottom);
-  if ( scrolltop < anistart &&  scrollbottom > aniend ) {
+  if ( scrolltop < anistart) {
     target1.classList.add("fadeCenter");
     target1.style.visibility="visible";
     target1.style.opacity = 1;
@@ -139,7 +139,7 @@ function appear3(end, aniend, anistart, start){
   var scrollbottom = target1.getBoundingClientRect().bottom;
   //console.log(scrolltop);
   //console.log(scrollbottom);
-  if ( scrolltop < anistart &&  scrollbottom > aniend ) {
+  if ( scrolltop < anistart ) {
     target1.classList.add("fadeCenter");
     target1.style.visibility="visible";
     target1.style.opacity = 1;
@@ -179,7 +179,7 @@ function appear4(end, aniend, anistart, start){
   var scrollbottom = target1.getBoundingClientRect().bottom;
   //console.log(scrolltop);
   //console.log(scrollbottom);
-  if ( scrolltop < anistart &&  scrollbottom > aniend ) {
+  if ( scrolltop < anistart) {
     target1.classList.add("fadeLeft");
     target1.style.visibility="visible";
     target1.style.opacity = 1;
@@ -227,7 +227,7 @@ function appear5(end, aniend, anistart, start){
   var scrollbottom = target.getBoundingClientRect().bottom;
   //console.log(scrolltop);
   //console.log(scrollbottom);
-  if ( scrolltop < anistart &&  scrollbottom > aniend ) {
+  if ( scrolltop < anistart  ) {
     target1.classList.add("fadeRight3");
     target1.style.visibility="visible";
     target1.style.opacity = 1;
