@@ -528,7 +528,7 @@ footer > div:nth-child(2) a > p{
   .mobile{display : inline-block !important;}
   .pc{display : none !important;}
 
-  h1{font-size : 36px;font-family: 'Noto Sans KR', sans-serif;}
+  h1{font-size : 34px;font-family: 'Noto Sans KR', sans-serif;}
   h2{font-size : 30px;font-family : 'S-CoreDream LT', 'S-CoreDream EB'}
   h2 > span{font-family : 'S-CoreDream EB'}
   h3{font-size : 24px;font-family: 'Noto Sans KR', sans-serif;}
@@ -642,19 +642,19 @@ footer > div:nth-child(2) a > p{
     background-image: url('./assets/0/main_gif.gif');
     background-repeat: no-repeat;
     background-size: 160%;
-    background-position : -240px 200px;
+    background-position : -240px 220px;
   }
 
   .sec1 > div{
     box-sizing: border-box;
     width : 100%;
     margin : 0 auto;
-    padding : 0 10px 150px 24px;
+    padding : 0 10px 200px 24px;
   }
 
   .sec1 h1{
     display : inline-block;
-    margin : 36px 0 20px 0;
+    margin : 26px 0 20px 0;
     letter-spacing : -3px;
   }
 
@@ -662,6 +662,7 @@ footer > div:nth-child(2) a > p{
     font-size : 12px;
     color : #fff;
     line-height : 20px;
+    letter-spacing: -1px;
   }
 
   .sec1 .button1{
